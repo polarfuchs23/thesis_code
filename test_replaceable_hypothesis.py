@@ -1,12 +1,17 @@
 """
-I have the hypothesis that in a PO committee with a non-maximal summed approval score (some selection of k candidates has a higher sum of approval scores) some candidate of the committee can be replaced by a candidate with a higher approval score not in the committee.
+I have the hypothesis that in a PO committee with a non-maximal summed approval score (some selection of k candidates
+has a higher sum of approval scores) some candidate of the committee can be replaced by a candidate with a higher
+approval score not in the committee.
 
-So: Let $C$ be a set of candidates and $V$ be a set of voters with an approval profile $\mathcal{A}$. For $C' \subseteq C$ we denote $S(C')$ as the sum of approval scores $\sum_{c\in C'} |V(c)|$. Let $W \subseteq C$ be a Pareto optimal committee of size $k$ for this vote. We set $S_m := \max\{S(C')|C' \subseteq C\}$ as the highest possible approval score of a size $k$ committee.
+So: Let $C$ be a set of candidates and $V$ be a set of voters with an approval profile $mathcal{A}$. For
+$C' subseteq C$ we denote $S(C')$ as the sum of approval scores $sum_{c in C'} |V(c)|$. Let $W subseteq C$ be a
+Pareto optimal committee of size $k$ for this vote. We set $S_m := max{S(C')|C' subseteq C}$ as the highest
+possible approval score of a size $k$ committee.
 
-If $S(W) \neq S_m$, there exist some $c_r \in C \setminus W$ and $c_w \in W$ s.t. $W - c_w + c_r$ is Pareto optimal.
+If $S(W) neq S_m$, there exist some $c_r in C setminus W$ and $c_w in W$ s.t. $W - c_w + c_r$ is Pareto optimal.
 
-(This would lead to the reconfiguration graph being connected, because all committees with maximal approval score are Pareto optimal and can be transformed by replacement of one candidate trivially)
-
+(This would lead to the reconfiguration graph being connected, because all committees with maximal approval score
+are Pareto optimal and can be transformed by replacement of one candidate trivially)
 """
 
 import logging
